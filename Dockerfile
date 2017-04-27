@@ -2,10 +2,10 @@
 # Apache2.4 & PHP7.1
 # kunitaya/apache24_php71
 #
-# 2017-04-24
+# 2017-04-27
 #   CentOS Linux 7.3.1611
 #   Apache 2.4.6
-#   PHP 7.0.14
+#   PHP 7.1.4
 
 FROM kunitaya/centos.jp
 MAINTAINER kunitaya
