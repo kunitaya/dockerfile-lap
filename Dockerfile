@@ -1,11 +1,6 @@
 #
 # Apache2.4 & PHP7.1
 # kunitaya/apache24_php71
-#
-# 2017-04-27
-#   CentOS Linux 7.3.1611
-#   Apache 2.4.6
-#   PHP 7.1.4
 
 FROM kunitaya/centos.jp
 MAINTAINER kunitaya
@@ -20,8 +15,8 @@ RUN yum install -y epel-release && \
     sed -i -e "s/enabled *= *1/enabled=0/g" /etc/yum.repos.d/epel.repo && \
     sed -i -e "s/enabled *= *1/enabled=0/g" /etc/yum.repos.d/remi.repo
 
-# httpd, which
-RUN yum install -y httpd httpd-tools which
+# httpd, which, mysql client
+RUN yum install -y httpd httpd-tools which mariadb
 
 # php-pecl-memcached
 RUN yum install --enablerepo=remi,remi-php71 -y php-pecl-memcached
