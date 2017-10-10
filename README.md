@@ -17,3 +17,5 @@ docker pull kunitaya/apache24_php71
 * 2017-05-11
     * Add mariadb(for mysql command)
     * PHP update(7.1.4 -> 7.1.5)
+* 2017-10-10
+    * Image update
