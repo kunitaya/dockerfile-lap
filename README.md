@@ -2,9 +2,9 @@
 Dockerfile for CentOS with Apache2.4 and PHP7.1
 
 ### Environment
-* CentOS Linux 7.3.1611
+* CentOS Linux 7.4.1708
 * Apache 2.4.6
-* PHP 7.1.5
+* PHP 7.1.10
 
 ### Activation manner
 ```
@@ -19,3 +19,5 @@ docker pull kunitaya/apache24_php71
     * PHP update(7.1.4 -> 7.1.5)
 * 2017-10-10
     * Image update
+* 2017-10-17
+    * Add php-pecl-zip
